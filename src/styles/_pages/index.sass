@@ -2,66 +2,58 @@
 // Phần Slider
 /////////////////////////////////
 .home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
+	// Phần Control
+	.owl-dots
+		margin-bottom: 2rem
+///////////////////////////////
+// phan product
+///////////////////////////////
+.home-product
+	.product-link
+		text-decoration: none
+		color: $blacks
+		.product-img
+			margin: auto
+			text-align: center
+			padding: 5px
 			position: relative
-			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
-				display: flex
-				align-items: center
+			.product-content
+				padding-top: 10px
 			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
-					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-news
-	.item 
-		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
-	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
-		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+				.product-content
+					font-size: 12px
+					position: absolute
+					top: 70%
+					left: 50%
+					transform: translateX(-50%)
+					background-color: $whites
+					padding: 5px 10px
+					line-height: 1
+					overflow: hidden
+					max-height: 68px
+.home-sale
+	min-height: 368px
+	margin: auto
+	padding: 5px 10px
+	.sale-tittle
+		text-align: center
+		text-transform: uppercase
+	.sale-link
+		text-decoration: none
+	.sale-fix-img
+		margin: 10px 10px
+		padding: 10px 10px
+		.sale-img-1
+			margin: 50px 50px
+			padding: 10px 10px
+		.sale-img-2
+			margin: 150px 150px
+			padding: 10px 10px
+		.sale-content
+			text-align: center
+			color: $blacks
+			.button
+				border: none
+				padding: 5px 80px
+				background-color: $primary
+				
