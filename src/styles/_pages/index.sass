@@ -9,6 +9,7 @@
 // phan product
 ///////////////////////////////
 .home-product
+	font-size: 12px
 	.product-link
 		text-decoration: none
 		color: $blacks
@@ -24,7 +25,13 @@
 				width: 60%
 				height: 60%
 			.product-content
+				background-color: $primary	
 				padding-top: 10px
+				margin: 10px 50px 0 50px
+				h6 
+					margin: 0
+				p 
+					margin: 0
 			+media-breakpoint-up(md)
 				.img-fix
 					width: 100%
@@ -40,3 +47,7 @@
 					line-height: 1
 					overflow: hidden
 					max-height: 68px
+					margin: 0
+					&:hover
+						background-color: $primary
+						color: $whites
