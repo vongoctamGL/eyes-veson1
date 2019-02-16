@@ -4,7 +4,7 @@
 .home-slider
 	// Phần Control
 	.owl-dots
-		margin-bottom: 2rem
+		margin-bottom: 0.5rem
 ///////////////////////////////
 // phan product
 ///////////////////////////////
@@ -13,13 +13,22 @@
 		text-decoration: none
 		color: $blacks
 		.product-img
+			width: 100%
+			height: auto
 			margin: auto
 			text-align: center
-			padding: 5px
+			padding: 5px 5px
 			position: relative
+			.img-fix 
+				margin-top: 5px
+				width: 60%
+				height: 60%
 			.product-content
 				padding-top: 10px
 			+media-breakpoint-up(md)
+				.img-fix
+					width: 100%
+					height: 100%
 				.product-content
 					font-size: 12px
 					position: absolute
@@ -31,29 +40,3 @@
 					line-height: 1
 					overflow: hidden
 					max-height: 68px
-.home-sale
-	min-height: 368px
-	margin: auto
-	padding: 5px 10px
-	.sale-tittle
-		text-align: center
-		text-transform: uppercase
-	.sale-link
-		text-decoration: none
-	.sale-fix-img
-		margin: 10px 10px
-		padding: 10px 10px
-		.sale-img-1
-			margin: 50px 50px
-			padding: 10px 10px
-		.sale-img-2
-			margin: 150px 150px
-			padding: 10px 10px
-		.sale-content
-			text-align: center
-			color: $blacks
-			.button
-				border: none
-				padding: 5px 80px
-				background-color: $primary
-				
